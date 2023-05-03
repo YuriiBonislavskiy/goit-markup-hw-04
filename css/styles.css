@@ -1,15 +1,13 @@
 /* Задання CSS-змінних */
 :root {
   --base-color: #757575;
-  --base-color2: #FFFFFF;
+  --base-color2: #ffffff;
   --header-color: #000000;
   --menu-item-color: #212121;
-  --select-color: #2196F3;
-  --background-dark: #2F303A;
-  --background-light: #F5F4FA;
-  --icon-color: #AFB1B8;
-  --icon-dark: #FFFFFF1A;
-  --project-item-color: #EEEEEE;
+  --select-color: #2196f3;
+  --background-dark: #2f303a;
+  --background-light: #f5f4fa;
+  --project-item-color: #eeeeee;
 }
 
 html {
@@ -34,9 +32,9 @@ body {
 }
 
 .container {
-  width: 1600px;
-  padding-left: 215px;
-  padding-right: 215px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -64,19 +62,18 @@ body {
   letter-spacing: 0.03em;
 }
 
+.my-header3-3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
 
 .my-header3-2 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.173;
   letter-spacing: 0.03em;
-}
-
-.my-header3-3 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
 }
 
 .my-header2,
@@ -119,6 +116,7 @@ header {
 .top-line {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 
 .top-logo,
@@ -167,8 +165,7 @@ header {
 
 .f-contacts-list {
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
@@ -176,46 +173,30 @@ header {
 
 .f-contacts-item {
   /* color: var(--menu-item-color); */
-  padding: 0px;
-  align-items: center;
   margin-right: 40px;
-  text-decoration: none;
 }
 
 .f-contacts-item:last-child {
   margin-right: 0px;
 }
 
-/* .f-male,
-.f-tel {
+.f-menu,
+.f-contacts {
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  align-items: center;
   display: block;
-  display: flex;
-} */
+  text-decoration: none;
+}
 
 .f-menu {
   color: var(--menu-item-color);
-  text-decoration: none;
 }
 
 .f-contacts {
   color: var(--base-color);
-  margin-left: 10px;
-  text-decoration: none;
-}
-
-.f-contacts-icon {
-  padding: 0px;
-  margin: 0px;
-  fill: var(--base-color);
 }
 
 #current-page,
-#f-contacts-mail,
 .f-menu:hover,
 .f-menu:focus,
 .f-contacts:hover,
@@ -223,9 +204,16 @@ header {
   color: var(--select-color);
 }
 
-#f-mail-icon {
-  fill: var(--select-color);
+.f-contacts-icon {
+  margin-right: 10px;
+  fill: var(--base-color);
 }
+
+.f-contacts:hover .f-contacts-icon,
+.f-contacts:focus .f-contacts-icon {
+    fill: var(--select-color);
+}
+
 
 /*                          FOOTER */
 footer {
@@ -237,14 +225,13 @@ footer {
 .basement {
   color: var(--base-color);
   /* height: 252px; */
-  display: flex;
 }
 
 .bottom-logo {
   color: var(--base-color2);
 }
 
-.address>address {
+.basement>address {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -275,70 +262,16 @@ footer {
   margin-bottom: 0px;
 }
 
+.address-item:hover,
+.address-item:focus {
+  color: var(--base-color2);
+}
+
 .address-link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   padding: 0px;
   margin: 0px;
-}
-
-.address-link:hover,
-.address-link:focus {
-  color: var(--base-color2);
-}
-
-.connect {
-  margin-left: 70px;
-  padding: 0px;
-}
-
-.connect .my-header3-1 {
-  color: var(--base-color2);
-}
-
-.firm-social {
-  display: flex;
-}
-
-.firm-icon {
-  width: 44px;
-  height: 44px;
-  margin-top: 20px;
-  margin-right: 10px;
-  padding: 0px;
-  text-align: center;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--icon-dark);
-  text-decoration: none;
-  /* cursor: pointer; */
-}
-
-.firm-icon .social-icon {
-  height: 20px;
-  width: 20px;
-  height: inherit;
-  padding: 0px;
-  margin: 0px;
-  fill: var(--base-color2);
-}
-
-#first-firm-icon {
-  background-color: var(--select-color);
-}
-
-#instagram-1 {
-  fill: var(--base-color2);
-}
-
-.firm-icon:hover,
-.firm-icon:focus {
-  background-color: var(--select-color);
-}
-
-.firm-icon:hover .social-icon,
-.firm-icon:focus .social-icon {
-  fill: var(--base-color2);
 }
 
 /* Сторінка СТУДІЯ */
@@ -349,17 +282,11 @@ footer {
   padding-bottom: 200px;
   padding-top: 200px;
   background: var(--background-dark);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bg-image.jpg');
-  background-size: 1600px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-
 
 .bg-box {
   color: var(--base-color2);
   text-align: center;
-
 }
 
 .bg-box .my-header1 {
@@ -426,20 +353,6 @@ footer {
 
 .f-services-item:last-child {
   margin-right: 0px;
-}
-
-.f-services-type {
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--background-light);
-  text-align: center;
-}
-
-.f-services-icon {
-  width: 65.32px;
-  height: 70px;
-  height: inherit;
-
 }
 
 /*                              Блок ЧИМ МИ ЗАЙМАЄМОСЬ */
@@ -523,7 +436,6 @@ footer {
 .team-person {
   padding-top: 30px;
   padding-bottom: 30px;
-  width: 270px;
 }
 
 .team-position {
@@ -536,95 +448,6 @@ footer {
   margin-bottom: 0px;
   padding: 0px;
   color: var(--base-color);
-}
-
-.team-social {
-  display: flex;
-  padding-top: 16px;
-  padding-left: 32px;
-  padding-right: 30px;
-
-}
-
-.team-icon {
-  width: 44px;
-  height: 44px;
-  margin: 0px;
-  margin-right: 10px;
-  text-align: center;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--background-light);
-  text-decoration: none;
-  /* cursor: pointer; */
-}
-
-.team-icon:last-child {
-  margin-right: 0px;
-}
-
-.social-icon {
-  height: 20px;
-  width: 20px;
-  height: inherit;
-  padding: 0px;
-  margin: 0px;
-  fill: var(--icon-color)
-}
-
-#first-icon {
-  background-color: var(--select-color);
-}
-
-#instagram-1 {
-  fill: var(--base-color2);
-}
-
-.team-icon:hover,
-team-icon:focus {
-  background-color: var(--select-color);
-}
-
-.team-icon:hover .social-icon,
-team-icon:focus .social-icon {
-  fill: var(--base-color2);
-}
-
-/*                          Блок Послійні клієнти */
-.clients {
-  text-align: center;
-}
-
-.clients-list {
-  display: flex;
-  list-style-type: none;
-  margin-top: 50px;
-  margin-bottom: 0px;
-  padding: 0px;
-}
-
-.clients-item {
-  text-decoration: none;
-  margin-right: 30px;
-}
-
-.clients-item:last-child {
-  margin-right: 0px;
-}
-
-.clients-link {
-  color: var(--base-color);
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
-  text-align: center;
-}
-
-.clients-icon {
-  width: 106px;
-  height: 60px;
-  height: inherit;
 }
 
 /* Сторінка ПОРТФОЛІО */
@@ -666,9 +489,6 @@ team-icon:focus .social-icon {
 .p-button:focus {
   background-color: var(--select-color);
   color: var(--base-color2);
-  box-shadow: 0px 2px 2px 0px #0000001F;
-  box-shadow: 0px 1px 2px 0px #00000014;
-  box-shadow: 0px 3px 1px 0px #0000001A;
 }
 
 /*                              Блок ПРОЄКТИ */
@@ -712,7 +532,7 @@ team-icon:focus .social-icon {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
-  /* padding-right: 24px; */
+  padding-right: 24px;
   border-left: 1px solid var(--project-item-color);
   border-right: 1px solid var(--project-item-color);
   border-bottom: 1px solid var(--project-item-color);
@@ -732,10 +552,4 @@ team-icon:focus .social-icon {
   margin: 0px;
   /* margin-left: 24px; */
   margin-top: 4px;
-}
-
-.project-item:hover {
-  box-shadow: 1px 4px 6px 0px #00000029;
-  box-shadow: 0px 4px 4px 0px #0000000F;
-  box-shadow: 0px 1px 1px 0px #0000001F;
 }
