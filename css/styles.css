@@ -218,6 +218,7 @@ header {
 .f-contacts:focus .f-contacts-icon {
   fill: var(--select-color);
 }
+
 /*                          FOOTER */
 footer {
   background-color: var(--background-dark);
@@ -289,12 +290,13 @@ footer {
 
 .firm-social {
   display: flex;
+  padding-top: 20px;
 }
 
 .firm-icon {
   width: 44px;
   height: 44px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-right: 10px;
   padding: 0px;
   text-align: center;
@@ -303,6 +305,10 @@ footer {
   background-color: var(--icon-dark);
   text-decoration: none;
   /* cursor: pointer; */
+}
+
+.firm-icon:last-child {
+  margin-right: 0px;
 }
 
 .firm-icon .social-icon {
@@ -331,15 +337,6 @@ footer {
 .firm-icon:focus .social-icon {
   fill: var(--base-color2);
 }
-
-/* **************************************** */
-
-#f-phone-icon {
-  width: 10px;
-  height: 16px;
-  float: left;
-}
-
 
 
 /* Сторінка СТУДІЯ */
