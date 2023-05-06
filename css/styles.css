@@ -317,14 +317,13 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF1A;
-  ;
   padding: 0px;
 }
 
 .firm-social-item .social-link .social-icon {
   height: 20px;
   width: 20px;
-  fill: var(--icon-color);
+  fill: var(--base-color2);
 }
 
 .firm-social-item .social-link:hover,
@@ -332,10 +331,10 @@ footer {
   background-color: var(--select-color);
 }
 
-.firm-social-item .social-link:hover .social-icon,
+/* .firm-social-item .social-link:hover .social-icon,
 .firm-social-item .social-link:focus .social-icon {
   fill: var(--base-color2);
-}
+} */
 
 /* Сторінка СТУДІЯ */
 /* Стилі у MAIN */
@@ -437,8 +436,6 @@ footer {
 .f-services-icon {
   width: 70px;
   height: 70px;
-  height: inherit;
-
 }
 
 /*                              Блок ЧИМ МИ ЗАЙМАЄМОСЬ */
@@ -631,7 +628,7 @@ footer {
 .clients-icon {
   width: 106px;
   height: 60px;
-  fill: var(--base-color);
+  fill: var(--icon-color);
 }
 
 .clients-link:hover .clients-icon,
