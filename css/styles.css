@@ -430,7 +430,9 @@ footer {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--background-light);
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .f-services-icon {
